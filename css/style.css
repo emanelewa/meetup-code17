@@ -1,0 +1,158 @@
+/* external fonts*/
+@font-face {
+    src: url("../fonts/Roboto-Thin.ttf");
+    font-family:Roboto-Thin;
+}
+@font-face {
+    src: url("../fonts/RobotoSlab-Light.ttf");
+    font-family:RobotoSlab-Light;
+}
+@font-face {
+    src: url("../fonts/RobotoSlab-Regular.ttf");
+    font-family:RobotoSlab-Regular;
+}
+
+
+
+
+/* general */
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/* section_head started */
+.section_head{
+   background-color: #4a454b;
+    border: 1px solid greenyellow;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+.section_head .triangle{
+    width: 0;
+    height: 0;
+    border-top:150px solid transparent;
+    border-right: 1355px solid #ffffff;
+    border-bottom: 0 solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 25;
+}
+/* content _head */
+.section_head .content{
+    width: 80%;
+    height: auto;
+    border: 1px solid white;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.section_head .content header{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ff5df1;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.section_head .content header .logo{
+    float: left;
+    height: auto;
+}
+.section_head .content header .logo img{
+    max-width: 100%;
+    height: auto;
+}
+/*menu started*/
+.section_head .content header .menu{
+    width: 50%;
+    height: auto;
+    border: 1px solid #28fff7;
+    float: right;
+}
+.section_head .content header .menu nav .ul_list{
+    padding: 0;
+    margin: 0;
+}
+.section_head .content header .menu nav .ul_list li{
+    list-style: none;
+    display: inline-block;
+}
+.section_head .content header .menu nav .ul_list li a{
+    color: white;
+    font-family:Roboto-Thin;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 33px;
+    line-height: 63px;
+}
+
+/*Countdown_Timer*/
+.section_head .content .Countdown_Timer{
+    width: 90%;
+    height: auto;
+    padding: 10px 20px;
+    background-color: #4a454b;
+    border: 2px solid #82b541;
+    border-radius: 20px;
+    text-align: center;
+    margin:120px auto;
+}
+.section_head .content .Countdown_Timer .timer{
+    text-align: center;
+    font-size: 130px;
+    color: white;
+    font-family:RobotoSlab-Light;
+}
+/*icons started*/
+.section_head .content .icons{
+    max-width: 100%;
+    height: 250px;
+    border: 1px solid yellow;
+    overflow: hidden;
+    margin-top: 100px;
+    position: relative;
+}
+.section_head .content .icons .ul_icon{
+    padding: 0;
+    margin: 0;
+}
+.section_head .content .icons .ul_icon li{
+    float: left;
+    list-style: none;
+}
+.section_head .content .icons .ul_icon li:nth-of-type(1){
+    position: absolute;
+    bottom:0;
+    left: 0;
+    z-index: 20;
+}
+.section_head .content .icons .ul_icon li:nth-of-type(2){
+    margin-left:150px ;
+    bottom: 20px;
+    position: absolute;
+    z-index: 15;
+}
+.section_head .content .icons .ul_icon li:nth-of-type(3){
+    margin-left:300px ;
+    bottom: 40px;
+    position: absolute;
+    z-index: 10;
+}
+.section_head .content .icons .ul_icon li:nth-of-type(4){
+    margin-left:450px ;
+    bottom: 45px;
+    position: absolute;
+    z-index: 8;
+}
+.section_head .content .icons .ul_icon li:nth-of-type(5){
+    margin-left:600px ;
+    bottom: 50px;
+    position: absolute;
+    z-index: 5;
+}
