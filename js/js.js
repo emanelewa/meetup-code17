@@ -1,3 +1,6 @@
+
+//date counting started
+
 // Set the date we're counting down to
 var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
 
@@ -19,14 +22,86 @@ var x = setInterval(function() {
     // Output the result in an element with id="demo"
     document.getElementById("demo").innerHTML = days + " : " + hours + " : "
         + minutes + " : " + seconds;
-     document.getElementById("text_demo").innerHTML = "DAYS" + " "  +  "HOURS" + " " + "MINUTES" + " " + "SECONDS";
-     document.getElementById("text_demo").style.color = "white";
-    document.getElementById("text_demo").style.fontFamily = "RobotoSlab-Regular";
-    document.getElementById("text_demo").style.fontSize = "25px";
-    document.getElementById("text_demo").style.wordSpacing = "125px";
+
     // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+
+
+//collapes started
+
+$('.accordion .item .heading').click(function() {
+
+    var a = $(this).closest('.item');
+    var b = $(a).hasClass('open');
+    var c = $(a).closest('.accordion').find('.open');
+
+    if(b != true) {
+        $(c).find('.content').slideUp(200);
+        $(c).removeClass('open');
+    }
+
+    $(a).toggleClass('open');
+    $(a).find('.content').slideToggle(200);
+
+});
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+
+//events grid
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+
+
+
+//speakers
+
+$(document).ready(function() {
+    $(".images-grid-1").imagesGrid();
+
+    $(".images-grid-2").imagesGrid({
+        rowHeight: 250,
+        margin: 10
+    });
+
+    $(".products").imagesGrid({
+        rowHeight: 250,
+        margin: 5,
+        imageSelector: '.product-image'
+    });
+});
+
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
