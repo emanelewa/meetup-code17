@@ -23,9 +23,13 @@
                         <!--logo started-->
                         <div class="logo">
                             <a href=""><img src="images/head/logo.png"></a>
+                            <div class="home_icon" onclick="z()" id="slide_menu">
+                                <img src="images/head/home_icon.png">
+                            </div>
                         </div><!-- ./logo-->
+
                         <!--menu started-->
-                        <div class="menu">
+                        <div class="menu" id="x">
                             <nav>
                                 <ul class="ul_list">
                                     <li><a href="">Event Details</a></li>
@@ -72,12 +76,12 @@
                             It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</p>
                     </div><!-- ./intro-->
                     <!--sign_up started-->
-                    <div class="sign_up">
+                    <div class="sign_up" id="reg">
                         <h2>Sign up for our event</h2>
                         <form>
-                            <input type="text" placeholder="Shahriyer Shuvo">
-                            <input type="email" placeholder="Enter your email">
-                            <input type="text" placeholder="Phone number">
+                            <input type="text" placeholder="Shahriyer Shuvo" required>
+                            <input type="email" placeholder="Enter your email" required>
+                            <input type="text" placeholder="Phone number" required>
                             <input type="text" placeholder="Envato Username">
                             <input type="submit" value="Let me in!">
                         </form>
@@ -197,10 +201,10 @@
                                         Envato Marketplaces</p>
                                     </div>
                                     <ul class="speaker_link">
-                                        <li><a class="plus-sign" href="https://www.facebook.com"><img src="images/speakers/speaker_fac.png"></a></li>
-                                        <li><a class="plus-sign" href="https://www.twitter.com"><img src="images/speakers/speaker_twitt.png"></a></li>
-                                        <li><a class="plus-sign" href="https://www.behance.net"><img src="images/speakers/speaker_behanct.png"></a></li>
-                                        <li><a class="plus-sign" href="https://en.wiktionary.org/wiki/dribblet"><img src="images/speakers/speaker_drebblet.png"></a></li>
+                                        <li class="employee"><a class="plus-sign" href="https://www.facebook.com"><img src="images/speakers/speaker_fac.png"></a></li>
+                                        <li class="employee"><a class="plus-sign" href="https://www.twitter.com"><img src="images/speakers/speaker_twitt.png"></a></li>
+                                        <li class="employee"><a class="plus-sign" href="https://www.behance.net"><img src="images/speakers/speaker_behanct.png"></a></li>
+                                        <li class="employee"><a class="plus-sign" href="https://en.wiktionary.org/wiki/dribblet"><img src="images/speakers/speaker_drebblet.png"></a></li>
                                     </ul>
                                 </div>
                             </div></li>
@@ -306,7 +310,7 @@
                                 </div>
                             </div></li>
                             <li><div class="product-wrapper" data-width="296" data-height="296">
-                                <img class="product-image" src="images/speakers/speaker_1.png" />
+                                <img class="product-image" src="images/speakers/speaker_9.png" />
                                 <div class="product-overlay">
                                     <div class="data_over">
                                         <h1>Shahriyer Shuvo</h1>
@@ -403,7 +407,7 @@
                 <!--map started-->
                 <article class="top_footer">
                     <!--footer_black started-->
-                    <div class="footer_black">
+                    <div class="footer_black" id="black">
                         <div class="message">
                             <div class="right_side">
                                 <form>
@@ -416,7 +420,7 @@
                             <div class="left_side">
                                 <img src="images/footer/left_icon.png">
                                 <p>Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia</p>
-                                <button>View Map</button>
+                                <button id="view">View Map</button>
                             </div><!-- ./left_side-->
                         </div><!-- ./message-->
                     </div><!-- ./footer_black-->

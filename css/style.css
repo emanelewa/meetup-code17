@@ -56,16 +56,13 @@ body{
     border: 1px solid black;
     position: relative;
     overflow: hidden;
+    background-color: white;
 }
 
-/*
-========================================================================================================
-                                                 section_head started
-==========================================================================================================
-*/
+
+/*section_head started*/
 .wrapper .section_head{
    background-color: #4a454b;
-    border: 1px solid greenyellow;
     max-width: 100%;
     height: auto;
     position: relative;
@@ -85,15 +82,12 @@ body{
 .wrapper .section_head .content{
     width: 80%;
     height: auto;
-    border: 1px solid white;
     margin: 0 auto;
     overflow: hidden;
-
 }
 .wrapper .section_head .content header{
     max-width: 100%;
     height: auto;
-    border: 1px solid #ff5df1;
     margin-top: 50px;
     overflow: hidden;
 }
@@ -105,11 +99,16 @@ body{
     max-width: 100%;
     height: auto;
 }
+.wrapper .section_head .content header .home_icon{
+    float: right;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
 /*menu started*/
 .wrapper .section_head .content header .menu{
     width: 50%;
     height: auto;
-    border: 1px solid #28fff7;
     float: right;
 }
 .wrapper .section_head .content header .menu nav .ul_list{
@@ -163,7 +162,6 @@ body{
 .wrapper .section_head .content .icons{
     max-width: 100%;
     height: 250px;
-    border: 1px solid yellow;
     overflow: hidden;
     margin-top: 100px;
     position: relative;
@@ -209,34 +207,45 @@ body{
     position: absolute;
     z-index: 5;
 }
+/*
+=============================================================================================
+                                           head responsive
+===========================================================================================
 
+*/
 
 /* Extra small devices (portrait phones, less than 576px)*/
 
 @media (min-width: 576px) and (max-width: 640px) {
 
     /*header*/
-    .section_head .content header .logo {
+    .wrapper .section_head .content header .logo{
         float: none;
-        height: auto;
-        text-align: center;
-        border: 1px solid red;
+    }
+    .section_head .content header .logo {
+        width: 100%!important;
     }
 
     .section_head .content header .menu {
-        width: 100%;
-        float: none;
-        text-align: center;
+        width: 100%!important;
+        float: none!important;
+        text-align: center!important;
+        padding: 30px 0;
+        display: none;
+    }
+    .section_head .content header .menu nav .ul_list{
+        height: auto;
     }
 
     .section_head .content header .menu nav .ul_list li {
-        display: block;
+        width: 100%;
     }
 
     .section_head .content header .menu nav .ul_list li a {
-        display: block;
-        margin: 0;
-        font-weight: bold;
+        display: block !important;
+        margin: 0!important;
+        font-family: Roboto-Bold!important;
+        font-size: 16px!important;
     }
     .section_head .content header .menu nav .ul_list li a:hover {
         background-color: #82b541;
@@ -245,60 +254,230 @@ body{
 
 /*Countdown_Timer*/
     .section_head .content .Countdown_Timer{
-        margin: 50px 0;
+        margin: 50px 0!important;
     }
     .section_head .content .Countdown_Timer .timer{
-        font-size: 60px;
+        font-size: 60px!important;
     }
     .section_head .content .Countdown_Timer span{
-        font-size: 15px;
+        font-size: 15px!important;
     }
     .section_head .content .Countdown_Timer .text_demo li{
-        margin-left: 46px;
-        font-size: 14px;
+        margin-left: 46px!important;
+        font-size: 14px!important;
     }
 
     /*icons*/
     .section_head .content .icons{
-        margin-top: 20px;
-        height: 150px;
+        margin-top: 20px!important;
+        height: 150px!important;
     }
     .section_head .triangle{
-        border-top: 91px solid transparent;
-        border-right: 580px solid #ffffff;
+        border-top: 91px solid transparent !important;
+        border-right: 580px solid #ffffff !important;
     }
 
     .section_head .content .icons .ul_icon li img{
-        width: 50%;
+        width: 50% !important;
     }
     .section_head .content .icons .ul_icon li:nth-of-type(2){
-        margin-left:50px ;
+        margin-left:50px !important;
     }
     .section_head .content .icons .ul_icon li:nth-of-type(3){
-        margin-left:100px ;
-        bottom: 20px;
+        margin-left:100px !important;
+        bottom: 20px !important;
     }
     .section_head .content .icons .ul_icon li:nth-of-type(4){
-        margin-left:160px ;
+        margin-left:160px !important;
         bottom: 30px;
     }
     .section_head .content .icons .ul_icon li:nth-of-type(5){
-        margin-left:210px ;
-        bottom: 40px;
-        position: absolute;
-        z-index: 5;
+        margin-left:210px !important;
+        bottom: 40px !important;
+        position: absolute!important;
+        z-index: 5!important;
     }
 
 }
 
-/*triangle*/
+@media (min-width: 640px) and (max-width: 767px){
+    /*header*/
+    .wrapper .section_head .content header .logo{
+        float: none;
+    }
+    .section_head .content header .logo {
+        width: 100%!important;
+    }
 
-@media (min-width: 641px) and (max-width: 800px) {
+    .section_head .content header .menu {
+        width: 100%!important;
+        float: none!important;
+        text-align: center!important;
+        padding: 30px 0;
+        display: none;
+    }
+    .section_head .content header .menu nav .ul_list{
+        height: auto;
+    }
+
+    .section_head .content header .menu nav .ul_list li {
+        width: 100%;
+    }
+
+    .section_head .content header .menu nav .ul_list li a {
+        display: block !important;
+        margin: 0!important;
+        font-family: Roboto-Bold!important;
+        font-size: 16px!important;
+    }
+    .section_head .content header .menu nav .ul_list li a:hover {
+        background-color: #82b541;
+    }
+
+
+    /*Countdown_Timer*/
+    .section_head .content .Countdown_Timer{
+        margin: 50px 0!important;
+    }
+    .section_head .content .Countdown_Timer .timer{
+        font-size: 60px!important;
+    }
+    .section_head .content .Countdown_Timer span{
+        font-size: 15px!important;
+    }
+    .section_head .content .Countdown_Timer .text_demo li{
+        margin-left: 46px!important;
+        font-size: 14px!important;
+    }
+
+    /*icons*/
+    .section_head .content .icons{
+        margin-top: 20px!important;
+        height: 150px!important;
+    }
+    .section_head .triangle{
+        border-top: 91px solid transparent !important;
+        border-right: 580px solid #ffffff !important;
+    }
+
+    .section_head .content .icons .ul_icon li img{
+        width: 50% !important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(2){
+        margin-left:80px !important;
+        bottom: 10px !important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(3){
+        margin-left:150px !important;
+        bottom: 10px !important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(4){
+        margin-left:210px !important;
+        bottom: 15px !important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(5){
+        margin-left:260px !important;
+        bottom: 30px !important;
+        position: absolute!important;
+        z-index: 5!important;
+    }
+}
+
+    /*triangle*/
+
+@media (min-width: 768px) and (max-width: 800px) {
     .section_head .triangle{
         border-top: 100px solid transparent;
         border-right: 750px solid #ffffff;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*header*/
+    .wrapper .section_head .content header .logo{
+        float: none;
+    }
+    .section_head .content header .logo {
+        width: 100%!important;
+    }
+
+    .section_head .content header .menu {
+        width: 100%!important;
+        float: none!important;
+        text-align: center!important;
+        padding: 30px 0;
+        display: none;
+    }
+    .section_head .content header .menu nav .ul_list{
+        height: auto;
+    }
+
+    .section_head .content header .menu nav .ul_list li {
+        width: 100%;
+    }
+
+    .section_head .content header .menu nav .ul_list li a {
+        display: block !important;
+        margin: 0!important;
+        font-family: Roboto-Bold!important;
+        font-size: 20px!important;
+    }
+    .section_head .content header .menu nav .ul_list li a:hover {
+        background-color: #82b541;
+    }
+
+
+    /*Countdown_Timer*/
+    .section_head .content .Countdown_Timer{
+        margin: 50px 0!important;
+    }
+    .section_head .content .Countdown_Timer .timer{
+        font-size: 75px!important;
+    }
+    .section_head .content .Countdown_Timer span{
+        font-size: 15px!important;
+    }
+    .section_head .content .Countdown_Timer .text_demo li{
+        margin-left: 45px !important;
+        font-size: 22px !important;
+    }
+
+    /*icons*/
+    .section_head .content .icons{
+        margin-top: 20px!important;
+        height: 150px!important;
+    }
+    .section_head .triangle{
+        border-top: 91px solid transparent !important;
+        border-right: 580px solid #ffffff !important;
+    }
+
+    .section_head .content .icons .ul_icon li img{
+        width: 70% !important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(1){
+        bottom: -20px!important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(2){
+        margin-left:90px !important;
+        bottom: 0 !important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(3){
+        margin-left:160px !important;
+        bottom: 5px !important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(4){
+        margin-left:220px !important;
+        bottom: 8px !important;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(5){
+        margin-left:289px !important;
+        bottom: 15px !important;
+        position: absolute!important;
+        z-index: 5!important;
+    }
+}
+
 
 
 @media (min-width: 641px) and (max-width: 991px) {
@@ -311,7 +490,6 @@ body{
         float: none;
         height: auto;
         text-align: center;
-        border: 1px solid red;
     }
 
     .section_head .content header .menu {
@@ -372,7 +550,7 @@ body{
     }
     .section_head .content .icons .ul_icon li:nth-of-type(5){
         margin-left:210px ;
-        bottom: 40px;
+        bottom: 15px;
         position: absolute;
         z-index: 5;
     }
@@ -383,22 +561,30 @@ body{
 @media (min-width: 992px) and (max-width: 1199px) {
 
     /*header*/
-    .section_head .content header .menu{
-        width: auto;
+
+    .wrapper .section_head .content header .home_icon{
+        display: none;
     }
 
-    .section_head .content header .menu nav .ul_list li a{
+    .wrapper .section_head .content header .menu nav .ul_list li a{
         margin-left: 20px;
+    }
+    .wrapper .section_head .content header .menu{
+        width: 60%;
+        float: right;
     }
 
 
     /*Countdown_Timer*/
-    .section_head .content .Countdown_Timer .timer{
+    .wrapper .section_head .content .Countdown_Timer .timer{
         font-size: 100px;
     }
-    .section_head .content .Countdown_Timer .text_demo li{
-        margin-left: 70px;
-        float: none;
+    .wrapper .section_head .content .Countdown_Timer .text_demo li{
+        display: inline-block;
+        color: white;
+        list-style: none;
+        margin-left: 60px;
+        font-size: 29px;
     }
 
     /*icons*/
@@ -408,39 +594,29 @@ body{
     }
 
     .section_head .content .icons .ul_icon li img{
-        width: 70%;
+        width: 100%;
+    }
+    .section_head .content .icons .ul_icon li:nth-of-type(1){
+        margin-left:0 ;
+        bottom: 20px!important ;
     }
     .section_head .content .icons .ul_icon li:nth-of-type(2){
-        margin-left:100px ;
+        margin-left:100px!important ;
+        bottom: 40px!important ;
     }
     .section_head .content .icons .ul_icon li:nth-of-type(3){
-        margin-left:200px ;
-        bottom: 20px;
+        margin-left:200px!important  ;
+        bottom: 50px!important ;
     }
     .section_head .content .icons .ul_icon li:nth-of-type(4){
-        margin-left:300px ;
-        bottom: 30px;
+        margin-left:330px!important ;
+        bottom: 50px!important;
     }
     .section_head .content .icons .ul_icon li:nth-of-type(5){
-        margin-left:400px ;
-        bottom: 40px;
+        margin-left:470px!important ;
+        bottom: 50px!important;
         position: absolute;
         z-index: 5;
-    }
-}
-/*triangle*/
-
-@media (min-width: 992px) and (max-width: 1050px) {
-    .section_head .triangle{
-        border-top: 130px solid transparent;
-        border-right: 1000px solid #ffffff;
-    }
-}
-
-@media (min-width: 1050px) and (max-width: 1199px) {
-    .section_head .triangle{
-        border-top: 110px solid transparent;
-        border-right: 1150px solid #ffffff;
     }
 }
 
@@ -448,8 +624,17 @@ body{
 @media (min-width: 1200px) {
 
     /*header*/
-    .section_head .content header .menu{
-        width: auto;
+    .wrapper .section_head .content header .home_icon{
+        display: none;
+    }
+
+    .wrapper .section_head .content header .menu{
+        width: 55%;
+        float: right;
+    }
+    .wrapper .section_head .content header .menu nav .ul_list li a{
+        font-size: 16px;
+        margin-left: 31px;
     }
 
     .section_head .content .Countdown_Timer .text_demo li{
@@ -460,24 +645,30 @@ body{
     }
 
 }
-/*head ended***********************************************************/
 
-/*welcome section*/
+
+
+/*
+===============================================================================================================
+                                         end head responsive
+=========================================================================================================
+
+*/
+
+/*welcome section**********************************************************************************/
 .wrapper .welcome{
     max-width: 100%;
-    border: 1px solid orange;
     overflow: hidden;
     margin-bottom: 200px;
+    background-color: white;
 }
 .wrapper .welcome .content{
     width: 80%;
     height: auto;
-    border: 1px solid #333333;
     margin: 0 auto;
     overflow: hidden;
 }
 .wrapper .welcome .content .intro{
-    border: 1px solid #ff4ff9;
     width: 60%;
     height: auto;
 }
@@ -555,13 +746,11 @@ body{
 .wrapper .welcome .content .welcome_icon{
    max-width: 100%;
     height: auto;
-    border: 1px solid #42ff26;
     margin-top: 130px;
     overflow: hidden;
     margin-bottom: 150px;
 }
 .wrapper .welcome .content .welcome_icon .welcome_details{
-    border: 1px solid #ff1e25;
     width: 30%;
     float: left;
     margin-left: 50px;
@@ -652,7 +841,6 @@ body{
 .wrapper .welcome .content .botm_text{
     max-width: 100%;
     height: auto;
-    border: 1px solid #ff4ff9;
     text-align: center;
     overflow: hidden;
 }
@@ -663,29 +851,425 @@ body{
     margin-top: 50px;
 }
 
-/*sponsor started
-.wrapper .sponsor{
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #82b541;
-    overflow: hidden;
-    text-align: center;
-    padding-top: 42px;
+/*
+=====================================================================================================
+                                      welcome section Responsive
+======================================================================================================
+*/
+@media (max-width: 576px) {
+    .wrapper .welcome{
+        margin-bottom: 50px;
+    }
+    .wrapper .welcome .content .sign_up{
+        width: 150px;
+        right: 58px;
+        top: 330px;
+        padding: 25px;
+    }
+    .wrapper .welcome .content .sign_up h2{
+        font-size: 20px;
+        font-family:Roboto-Regular;
+    }
+    .wrapper .welcome .content .sign_up form input::placeholder {
+        font-size: 12px;
+    }
+    .wrapper .welcome .content .sign_up form input{
+        padding: 11px;
+        margin-bottom: 10px;
+    }
+    .wrapper .welcome .content .sign_up form input[type="submit"]{
+        font-size: 15px;
+        margin-top: 3px;
+    }
+    .wrapper .welcome .content .sign_up p{
+        font-size: 10px;
+    }
+
+    /*welcome*/
+    .wrapper .welcome .content .intro{
+        width: 55%;
+    }
+    .wrapper .welcome .content .intro h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .wrapper .welcome .content .intro p{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .wrapper .welcome .content .welcome_icon{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .wrapper .welcome .content .welcome_icon .welcome_details{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+   /*accordion*/
+    .wrapper .welcome .content .accordion .item_title {
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+    .wrapper .welcome .content .accordion .item_title .heading {
+        float: left;
+        margin-right: 75px;
+    }
+
+    .wrapper .welcome .content .accordion .item .heading{
+        line-height: 40px;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .wrapper .welcome .content .accordion .item .heading span{
+        margin-right: 30px;
+    }
+
+    .wrapper .welcome .content .accordion .item .content{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .wrapper .welcome .content .botm_text p{
+        font-size: 10px;
+        margin-top: 20px;
+    }
 }
 
-.wrapper .sponsor .bg_sponsor{
-    width: 100%;
-    height: 500px;
-    transform: skew(-30deg);
-    transform: rotate(-3deg);
-    background: #555;
-}*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .wrapper .welcome{
+        margin-bottom: 50px;
+    }
+    .wrapper .welcome .content .sign_up{
+        width: 150px;
+        right: 58px;
+        top: 330px;
+        padding: 25px
+    }
+    .wrapper .welcome .content .sign_up h2{
+        font-size: 20px;
+        font-family:Roboto-Regular;
+    }
+    .wrapper .welcome .content .sign_up form input::placeholder {
+        font-size: 12px;
+    }
+    .wrapper .welcome .content .sign_up form input{
+        padding: 11px;
+        margin-bottom: 10px;
+    }
+    .wrapper .welcome .content .sign_up form input[type="submit"]{
+        font-size: 15px;
+        margin-top: 3px;
+    }
+    .wrapper .welcome .content .sign_up p{
+        font-size: 10px;
+    }
+
+    /*welcome*/
+    .wrapper .welcome .content .intro{
+        width: 55%;
+    }
+    .wrapper .welcome .content .intro h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .wrapper .welcome .content .intro p{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .wrapper .welcome .content .welcome_icon{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .wrapper .welcome .content .welcome_icon .welcome_details{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    /*accordion*/
+    .wrapper .welcome .content .accordion .item_title {
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+    .wrapper .welcome .content .accordion .item_title .heading {
+        float: left;
+        margin-right: 75px;
+    }
+
+    .wrapper .welcome .content .accordion .item .heading{
+        line-height: 40px;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .wrapper .welcome .content .accordion .item .heading span{
+        margin-right: 30px;
+    }
+
+    .wrapper .welcome .content .accordion .item .content{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .wrapper .welcome .content .botm_text p{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrapper .welcome{
+        margin-bottom: 50px;
+    }
+    .wrapper .welcome .content .sign_up{
+        width: 180px;
+        right: 77px;
+        top: 350px;
+        padding: 25px
+    }
+    .wrapper .welcome .content .sign_up h2{
+        font-size: 20px;
+        font-family:Roboto-Regular;
+    }
+    .wrapper .welcome .content .sign_up form input::placeholder {
+        font-size: 12px;
+    }
+    .wrapper .welcome .content .sign_up form input{
+        padding: 11px;
+        margin-bottom: 10px;
+    }
+    .wrapper .welcome .content .sign_up form input[type="submit"]{
+        font-size: 15px;
+        margin-top: 3px;
+    }
+    .wrapper .welcome .content .sign_up p{
+        font-size: 10px;
+    }
+
+    /*welcome*/
+    .wrapper .welcome .content .intro{
+        width: 55%;
+    }
+    .wrapper .welcome .content .intro h1{
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    .wrapper .welcome .content .intro p{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .wrapper .welcome .content .welcome_icon{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .wrapper .welcome .content .welcome_icon .welcome_details{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    /*accordion*/
+    .wrapper .welcome .content .accordion .item_title {
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+    .wrapper .welcome .content .accordion .item_title .heading {
+        float: left;
+        margin-right: 75px;
+    }
+
+    .wrapper .welcome .content .accordion .item .heading{
+        line-height: 40px;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .wrapper .welcome .content .accordion .item .heading span{
+        margin-right: 30px;
+    }
+
+    .wrapper .welcome .content .accordion .item .content{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .wrapper .welcome .content .botm_text p{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .wrapper .welcome{
+        margin-bottom: 50px;
+    }
+    .wrapper .welcome .content .sign_up{
+        top: 550px;
+        padding: 25px;
+    }
+    .wrapper .welcome .content .sign_up h2{
+        font-size: 30px;
+        font-family:Roboto-Regular;
+    }
+    .wrapper .welcome .content .sign_up form input::placeholder {
+        font-size: 14px;
+    }
+    .wrapper .welcome .content .sign_up form input{
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .wrapper .welcome .content .sign_up form input[type="submit"]{
+        font-size: 20px;
+        margin-top: 3px;
+    }
+    .wrapper .welcome .content .sign_up p{
+        font-size: 12px;
+    }
+
+    /*welcome*/
+    .wrapper .welcome .content .intro{
+        width: 50%;
+    }
+    .wrapper .welcome .content .intro h1{
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+    .wrapper .welcome .content .intro p{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .wrapper .welcome .content .welcome_icon{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .wrapper .welcome .content .welcome_icon .welcome_details{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    /*accordion*/
+    .wrapper .welcome .content .accordion .item_title {
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+    .wrapper .welcome .content .accordion .item_title .heading {
+        float: left;
+        margin-right: 75px;
+    }
+
+    .wrapper .welcome .content .accordion .item .heading{
+        line-height: 40px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .wrapper .welcome .content .accordion .item .heading span{
+        margin-right: 30px;
+    }
+
+    .wrapper .welcome .content .accordion .item .content{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .wrapper .welcome .content .botm_text p{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .wrapper .welcome{
+        margin-bottom: 50px;
+    }
+    .wrapper .welcome .content .sign_up{
+        top: 600px;
+        padding: 25px;
+    }
+    .wrapper .welcome .content .sign_up h2{
+        font-size: 30px;
+        font-family:Roboto-Regular;
+    }
+    .wrapper .welcome .content .sign_up form input::placeholder {
+        font-size: 14px;
+    }
+    .wrapper .welcome .content .sign_up form input{
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .wrapper .welcome .content .sign_up form input[type="submit"]{
+        font-size: 20px;
+        margin-top: 3px;
+    }
+    .wrapper .welcome .content .sign_up p{
+        font-size: 12px;
+    }
+
+    /*welcome*/
+    .wrapper .welcome .content .intro{
+        width: 50%;
+    }
+    .wrapper .welcome .content .intro h1{
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+    .wrapper .welcome .content .intro p{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .wrapper .welcome .content .welcome_icon{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .wrapper .welcome .content .welcome_icon .welcome_details{
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        width: 31%;
+    }
+    /*accordion*/
+    .wrapper .welcome .content .accordion .item_title {
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+    .wrapper .welcome .content .accordion .item_title .heading {
+        float: left;
+        margin-right: 75px;
+    }
+
+    .wrapper .welcome .content .accordion .item .heading{
+        line-height: 40px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .wrapper .welcome .content .accordion .item .heading span{
+        margin-right: 30px;
+    }
+
+    .wrapper .welcome .content .accordion .item .content{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .wrapper .welcome .content .botm_text p{
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}
+
+/*
+=====================================================================================================
+                                   end welcome section Responsive
+======================================================================================================
+*/
+
+
+
+
+
+
+/*reward section started**********************************************************************/
 .wrapper .cover_re{
     width: 102%;
     height: 650px;
-    border: 1px solid #1421ff;
     overflow: hidden;
     position: relative;
+    margin-top: 200px;
 }
 .wrapper .cover_re .reward{
     width: 102%;
@@ -697,13 +1281,11 @@ body{
     top: 9%;
     right: -25px;
     padding: 0 150px 100px 0;
-    border: 1px solid red;
 }
 .wrapper .cover_re .reward .text_reward{
     width: 50%;
     height: auto;
     float: right;
-    border: 1px solid #28fff7;
     transform: rotate(3deg);
     margin-top: 100px;
 }
@@ -740,402 +1322,1406 @@ body{
     width: 346px;
     height: 352px;
     position: absolute;
-    top: 32%;
-    left: 125px;
     z-index: 150;
     cursor: pointer;
-    border: 1px solid #ff4ff9;
     display: block;
+    top: 29%;
+    left: 100px;
+    background-size: contain;
 }
 
-/*speaker started*/
-.wrapper .speaker{
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #f3ff20;
-    overflow: hidden;
-    background-color: #ffffff;
-    padding: 150px 0;
+/*
+============================================================================================
+                                section reward responsive
+============================================================================================
+*/
+
+    @media (max-width: 576px) {
+    .wrapper .cover_re .reward{
+        padding: 0 80px 100px 0;
+    }
+    .wrapper .cover_re .reward .text_reward h1{
+        float: right;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .wrapper .cover_re .reward .text_reward p{
+        margin-bottom: 20px;
+    }
+    .wrapper .cover_re .reward .text_reward button{
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    .wrapper .circle_reward{
+        width: 35%;
+        top: 34%;
+        left: 55px;
+        background-size: contain;
+    }
 }
 
-.wrapper .speaker .content_speaker{
-    width: 80%;
-    height: auto;
-    border: 1px solid white;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.wrapper .speaker .content_speaker .speaker_data{
-    width: 100%;
-    height: auto;
-    border: 1px solid #1421ff;
-}
-.wrapper .speaker .content_speaker .speaker_data h1{
-    font-family: Roboto-Bold;
-    color: #242424;
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.wrapper .speaker .content_speaker .speaker_data p{
-    font-family: Roboto-Light;
-    color: #242424;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-.wrapper .speaker .content_speaker .speaker_item{
-    width: 100%;
-    height: auto;
-    border: 1px solid #ff5df1;
-    margin-top: 70px;
-    overflow: hidden;
+    @media (min-width: 577px) and (max-width: 767px) {
+    .wrapper .cover_re .reward {
+        padding: 0 80px 100px 0;
+    }
+
+    .wrapper .cover_re .reward .text_reward h1 {
+        float: right;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .wrapper .cover_re .reward .text_reward p {
+        margin-bottom: 20px;
+    }
+
+    .wrapper .cover_re .reward .text_reward button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
 }
 
-.wrapper .speaker .content_speaker .speaker_item .products {
-    text-align: justify;
-    font-size: 0;
-    line-height: 0;
+    @media (min-width: 768px) and (max-width: 991px) {
+        .wrapper .cover_re .reward {
+            padding: 0 80px 100px 0;
+        }
+
+        .wrapper .cover_re .reward .text_reward h1 {
+            float: right;
+            font-size: 45px!important;
+            margin-bottom: 10px;
+        }
+
+        .wrapper .cover_re .reward .text_reward p {
+            margin-bottom: 20px;
+        }
+
+        .wrapper .cover_re .reward .text_reward button {
+            font-size: 15px;
+            padding: 10px 20px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+    .wrapper .cover_re .reward {
+        padding: 0 80px 100px 0;
+    }
+
+    .wrapper .cover_re .reward .text_reward h1 {
+        float: right;
+        font-size: 45px!important;
+        margin-bottom: 10px;
+    }
+
+    .wrapper .cover_re .reward .text_reward p {
+        margin-bottom: 20px;
+    }
+
+    .wrapper .cover_re .reward .text_reward button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
 
 }
-.wrapper .speaker .content_speaker .speaker_item .products li{
-    float: left;
-    margin: 20px 31px;
-    list-style: none;
-}
 
-.wrapper .speaker .content_speaker .speaker_item .products .product-wrapper {
-    position: relative;
-    display: inline-block;
-    margin-top: 5px;
-}
-.wrapper .speaker .content_speaker .speaker_item .products .product-image {
-    max-width: 100%;
-}
-.wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("../images/speakers/img_bg.png");
-    background-repeat: no-repeat;
-    cursor: pointer;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .data_over{
-    height: auto;
-    width: auto;
-    padding: 30px;
-    border:1px solid red ;
-}
-.wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .data_over h1{
-    font-family:Roboto-Black;
-    font-size: 50px;
-    color: white;
-    margin-bottom: 10px;
-    line-height: 50px;
-}
-.wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .data_over p{
-    font-family:Roboto-Light;
-    font-size: 14px;
-    line-height: 22px;
-    color: #ffffff;
-}
-.wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .speaker_link{
-     margin: 0;
-     padding: 0;
- }
-.wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .speaker_link li{
-    float: left;
-    margin-right: 10px;
-}
+    @media (min-width: 992px) and (max-width: 1199px) {
 
-.wrapper .speaker .content_speaker .speaker_item .product-overlay .plus-sign {
-    position: absolute;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-.wrapper .speaker .content_speaker .speaker_item .products .product-wrapper:hover .product-overlay {
-    display: block;
-}
+        .wrapper .cover_re{
+            height: 670px;
+        }
+        .wrapper .cover_re .reward {
+            padding: 0 80px 100px 0;
+        }
 
+        .wrapper .cover_re .reward .text_reward h1 {
+            float: right;
+            font-size: 45px!important;
+            margin-bottom: 10px;
+        }
 
-/*sponsors started*/
-.wrapper .sponsors_cover{
-    width: 102%;
-    height: 813px;
-    border: 1px solid #1421ff;
-    overflow: hidden;
-    position: relative;
-    background-color: white;
-}
-.wrapper .sponsors{
-    width: 102%;
-    overflow: hidden;
-    text-align: center;
-    transform: rotate(-3deg);
-    background: #4b4d4f;
-    position: absolute;
-    top: 4%;
-    right: -25px;
-    padding: 0 21px 100px 0;
-    border: 1px solid red;
-}
-.wrapper .sponsors .content_sponsor{
-    width: 50%;
-    height: auto;
-    border: 1px solid #28fff7;
-    transform: rotate(3deg);
-    margin: 100px auto;
-}
-.wrapper .sponsors .content_sponsor h1{
-    font-family:Roboto-Black;
-    font-size: 50px;
-    color: white;
-    margin-bottom: 30px;
-}
-.wrapper .sponsors .content_sponsor p{
-    font-family:Roboto-Light;
-    font-size: 14px;
-    line-height: 22px;
-    color: #ffffff;
-}
-.wrapper .sponsors .spon_icon{
-    width: auto;
-    height: auto;
-    border: 1px solid #ff39fa;
-    margin-top: 20px;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: 40px;
-}
-.wrapper .sponsors .spon_icon h5{
-    font-family:Roboto-Light;
-    line-height: 22px;
-    color: #ffffff;
-    margin-bottom: 40px;
-}
-.wrapper .sponsors .spon_icon ul{
-    padding: 0;
-    margin: 0 auto;
-}
-.wrapper .sponsors .spon_icon ul li{
-    float: left;
-    margin-right: 130px;
-    list-style: none;
-}
-.wrapper .sponsors .spon_icon ul li:last-child{
-    margin-right: 0;
-    float: right;
-    margin-top: 23px;
-}
-.wrapper .sponsors button{
-    float: none;
-    color: white;
-    font-family:Roboto-Regular;
-    font-size: 18px;
-    margin-bottom: 20px;
-    background-color: #90d23d;
-    border-radius: 15px;
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-}
+        .wrapper .cover_re .reward .text_reward p {
+            margin-bottom: 20px;
+        }
 
-/*events started*/
-.wrapper .events{
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #82b541;
-    padding: 100px;
-    background-color: white;
-}
-.wrapper .events .data{
-    width: 100%;
-    height: auto;
-    border: 1px solid #2bc7e7;
-}
-.wrapper .events .data h1{
-    font-family: Roboto-Bold;
-    color: #242424;
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.wrapper .events .data p{
-    font-family: Roboto-Light;
-    color: #242424;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-.wrapper .events .grid{
-    width: 100%;
-    height: auto;
-    border: 1px solid #b83fe7;
-}
-
-/*footer started*/
-.wrapper footer{
-    max-width: 100%;
-    height:auto;
-    border: 1px solid #ff1e25;
-    overflow: hidden;
-    position: relative;
-}
-.wrapper footer .top_footer{
-    height: auto;
-    max-width: 100%;
-    overflow: hidden;
-    border: 1px solid #3dfff7;
+        .wrapper .cover_re .reward .text_reward button {
+            font-size: 15px;
+            padding: 10px 20px;
+        }
 
 }
-.wrapper footer .top_footer .footer_black{
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height:604px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 50;
+
+    @media (min-width: 1200px) {
+        .wrapper .cover_re{
+            width: 102%;
+            height: 700px;
+            overflow: hidden;
+            position: relative;
+        }
+        .wrapper .cover_re .reward{
+            width: 102%;
+            overflow: hidden;
+            text-align: center;
+            transform: rotate(-3deg);
+            background: #4b4d4f;
+            position: absolute;
+            top: 9%;
+            right: -25px;
+            padding: 0 150px 100px 0;
+        }
+        .wrapper .cover_re .reward .text_reward{
+            width: 50%;
+            height: auto;
+            float: right;
+            transform: rotate(3deg);
+            margin-top: 100px;
+        }
+        .wrapper .cover_re .reward .text_reward h1{
+            float: right;
+            color: white;
+            font-family:Roboto-Black;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .wrapper .cover_re .reward .text_reward p{
+            color: white;
+            font-size: 14px;
+            font-family:Roboto-Light;
+            float: right;
+            text-align: right;
+            margin-bottom: 40px;
+        }
+        .wrapper .cover_re .reward .text_reward button{
+            float: right;
+            color: white;
+            font-family:Roboto-Regular;
+            font-size: 18px;
+            margin-bottom: 20px;
+            background-color: #90d23d;
+            border-radius: 15px;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .wrapper .circle_reward{
+            background-image: url(../images/reward/circle.png);
+            background-repeat: no-repeat;
+            width: 346px;
+            height: 352px;
+            position: absolute;
+            z-index: 150;
+            cursor: pointer;
+            display: block;
+            top: 30%;
+            left: 100px;
+            background-size: contain;
+        }
+
+
+    }
+
+
+
+    /*circle_reward*/
+    @media (min-width: 576px) and (max-width: 600px) {
+        .wrapper .circle_reward {
+            width: 35%;
+            top: 30%;
+            left: 29px;
+            background-size: contain;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 650px) {
+        .wrapper .circle_reward {
+            width: 30%;
+            top: 29%;
+            left: 55px;
+            background-size: contain;
+        }
+    }
+
+    @media (min-width: 651px) and (max-width: 767px) {
+        .wrapper .circle_reward {
+            width: 30%;
+            top: 28%;
+            left: 55px;
+            background-size: contain;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 897px){
+        .wrapper .circle_reward {
+            width: 35%;
+            top: 26%;
+            left: 55px;
+            background-size: contain;
+        }
+     }
+
+    @media (min-width: 898px) and (max-width: 991px){
+    .wrapper .circle_reward {
+        width: 35%;
+        top: 24%;
+        left: 55px;
+        background-size: contain;
+    }
 }
-.wrapper footer .top_footer .footer_black .message{
-    width: 80%;
-    height: auto;
-    margin: 83px auto;
-    background-color: white;
-    overflow: hidden;
+
+    @media (min-width: 992px) and (max-width: 1199px){
+
+        .wrapper .cover_re{
+            margin-top: 200px;
+        }
+        .wrapper .circle_reward{
+            background-image: url(../images/reward/circle.png);
+            background-repeat: no-repeat;
+            width: 346px;
+            height: 352px;
+            position: absolute;
+            z-index: 150;
+            cursor: pointer;
+            display: block;
+            top: 26%;
+            left: 100px;
+            background-size: contain;
+        }
 }
-.wrapper footer .top_footer .footer_black .message .right_side{
-    float: right;
-    height: auto;
-    padding: 50px;
-    border: 1px solid red;
-    width: 40%;
+
+/*
+============================================================================================
+                              end section reward responsive
+============================================================================================
+*/
+
+
+    /*speaker started*/
+    .wrapper .speaker {
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-color: #ffffff;
+        padding: 150px 0;
+    }
+
+    .wrapper .speaker .content_speaker {
+        width: 80%;
+        height: auto;
+        border: 1px solid white;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_data {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_data h1 {
+        font-family: Roboto-Bold;
+        color: #242424;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_data p {
+        font-family: Roboto-Light;
+        color: #242424;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item {
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+        overflow: hidden;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products {
+        text-align: justify;
+        font-size: 0;
+        line-height: 0;
+
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products li {
+        float: left;
+        margin: 20px 31px;
+        list-style: none;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-wrapper {
+        position: relative;
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-image {
+        max-width: 100%;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../images/speakers/img_bg.png");
+        background-repeat: no-repeat;
+        cursor: pointer;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .data_over {
+        height: auto;
+        width: auto;
+        padding: 30px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .data_over h1 {
+        font-family: Roboto-Black;
+        font-size: 50px;
+        color: white;
+        margin-bottom: 10px;
+        line-height: 50px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .data_over p {
+        font-family: Roboto-Light;
+        font-size: 14px;
+        line-height: 22px;
+        color: #ffffff;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .speaker_link {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-wrapper .product-overlay .speaker_link li {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .product-overlay .plus-sign {
+        position: absolute;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item .products .product-wrapper:hover .product-overlay {
+        display: block;
+    }
+
+/*
+    ============================================================================================
+                                    section speaker responsive
+    ============================================================================================
+*/
+    @media (max-width: 576px) {
+
+    .wrapper .speaker .content_speaker .speaker_data{
+        width: auto;
+        text-align: center;
+    }
+    .wrapper .speaker .content_speaker .speaker_data h1{
+        font-size: 30px;
+    }
+    .wrapper .speaker .content_speaker .speaker_data p{
+        font-size: 12px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item{
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
-.wrapper footer .top_footer .footer_black .message .right_side form{
-    width: 100%;
-    height: auto;
-    border: 1px solid #3dfff7;
-    overflow: hidden;
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .wrapper .speaker .content_speaker .speaker_data{
+            width: auto;
+            text-align: center;
+        }
+        .wrapper .speaker .content_speaker .speaker_data h1{
+            font-size: 40px;
+        }
+        .wrapper .speaker .content_speaker .speaker_data p{
+            font-size: 12px;
+        }
+
+        .wrapper .speaker .content_speaker .speaker_item{
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width:  991px) {
+    .wrapper .speaker .content_speaker .speaker_data{
+        width: auto;
+        text-align: center;
+    }
+    .wrapper .speaker .content_speaker .speaker_data h1{
+        font-size: 40px;
+    }
+    .wrapper .speaker .content_speaker .speaker_data p{
+        font-size: 12px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item{
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
-.wrapper footer .top_footer .footer_black .message .right_side form input[type="email"]{
-     width: -webkit-fill-available;
-     width: -moz-fill-available;
-     height: auto;
-     border-radius: 5px;
-     border: 1px solid #bebebe;
-     padding: 10px;
-    margin-bottom: 20px;
- }
-.wrapper footer .top_footer .footer_black .message .right_side form input[type="email"]:focus{
-    outline: none;
-    border: 1px solid #90d23d;
+
+    @media (min-width: 992px) and (max-width:  1199px) {
+    .wrapper .speaker .content_speaker .speaker_data{
+        width: auto;
+        text-align: center;
+    }
+    .wrapper .speaker .content_speaker .speaker_data h1{
+        font-size: 50px;
+    }
+    .wrapper .speaker .content_speaker .speaker_data p{
+        font-size: 15px;
+    }
+
+    .wrapper .speaker .content_speaker .speaker_item{
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
-.wrapper footer .top_footer .footer_black .message .right_side form input:focus::placeholder{
-    color:#6c6c6c;
-    outline: none;
+
+    @media (min-width: 1200px) {
+
+        .wrapper .speaker .content_speaker{
+            width: 90%;
+        }
+        .wrapper .speaker .content_speaker .speaker_data{
+            width: auto;
+            height: auto;
+        }
+        .wrapper .speaker .content_speaker .speaker_data h1{
+            font-size: 50px;
+        }
+        .wrapper .speaker .content_speaker .speaker_data p{
+            font-size: 15px;
+        }
+        .wrapper .speaker .content_speaker .speaker_item{
+            width: 100%;
+            height: auto;
+            margin-top: 70px;
+            overflow: hidden
+        }
 }
-.wrapper footer .top_footer .footer_black .message .right_side form input::placeholder{
-    color:#bebebe ;
-    font-family: Roboto-Light;
-    font-size: 14px;
+
+/*
+    ============================================================================================
+                                   end section speaker responsive
+    ============================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/*sponsors started*******************************************************************/
+    .wrapper .sponsors_cover {
+        width: 102%;
+        height: 813px;
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+    }
+
+    .wrapper .sponsors {
+        width: 102%;
+        overflow: hidden;
+        text-align: center;
+        transform: rotate(-3deg);
+        background: #4b4d4f;
+        position: absolute;
+        top: 4%;
+        right: -25px;
+        padding: 0 21px 100px 0;
+    }
+
+    .wrapper .sponsors .content_sponsor {
+        width: 50%;
+        height: auto;
+        transform: rotate(3deg);
+        margin: 100px auto;
+    }
+
+    .wrapper .sponsors .content_sponsor h1 {
+        font-family: Roboto-Black;
+        font-size: 50px;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .wrapper .sponsors .content_sponsor p {
+        font-family: Roboto-Light;
+        font-size: 14px;
+        line-height: 22px;
+        color: #ffffff;
+    }
+
+    .wrapper .sponsors .spon_icon {
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .wrapper .sponsors .spon_icon h5 {
+        font-family: Roboto-Light;
+        line-height: 22px;
+        color: #ffffff;
+        margin-bottom: 40px;
+    }
+
+    .wrapper .sponsors .spon_icon ul {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .wrapper .sponsors .spon_icon ul li {
+        float: left;
+        margin-right: 130px;
+        list-style: none;
+    }
+
+    .wrapper .sponsors .spon_icon ul li:last-child {
+        margin-right: 0;
+        float: right;
+        margin-top: 23px;
+    }
+
+    .wrapper .sponsors button {
+        float: none;
+        color: white;
+        font-family: Roboto-Regular;
+        font-size: 18px;
+        margin-bottom: 20px;
+        background-color: #90d23d;
+        border-radius: 15px;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+/*
+    ============================================================================================
+                                    section sponsors responsive
+    ============================================================================================
+*/
+    @media (max-width: 576px) {
+
+        .wrapper .sponsors {
+            right: -18px;
+        }
+
+        .wrapper .sponsors .content_sponsor h1 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .wrapper .sponsors .content_sponsor p {
+            font-size: 12px;
+        }
+
+        .wrapper .sponsors .spon_icon ul li {
+            float: none;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .wrapper .sponsors .spon_icon ul li:last-child {
+            margin-right: 0;
+            float: none;
+            margin-top: 0;
+        }
+
+        .wrapper .sponsors button {
+            font-size: 15px;
+            padding: 8px 20px;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+        .wrapper .sponsors {
+            right: -18px;
+        }
+
+        .wrapper .sponsors .content_sponsor h1 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .wrapper .sponsors .content_sponsor p {
+            font-size: 12px;
+        }
+
+        .wrapper .sponsors .spon_icon ul li {
+            float: none;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .wrapper .sponsors .spon_icon ul li:last-child {
+            margin-right: 0;
+            float: none;
+            margin-top: 0;
+        }
+
+        .wrapper .sponsors button {
+            font-size: 15px;
+            padding: 8px 20px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+    .wrapper .sponsors {
+        right: -18px;
+    }
+    .wrapper .sponsors .content_sponsor{
+        width: 80%;
+    }
+
+    .wrapper .sponsors .spon_icon{
+            margin-bottom: 50px;
+    }
+
+    .wrapper .sponsors .content_sponsor h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .wrapper .sponsors .content_sponsor p {
+        font-size: 15px;
+    }
+    .wrapper .sponsors .spon_icon ul li {
+        margin-right: 0;
+    }
+
+    .wrapper .sponsors .spon_icon ul li:nth-of-type(2){
+        display: inline-block;
+        margin:auto;
+        float: none;
+     }
+
+    .wrapper .sponsors button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
 }
-.wrapper footer .top_footer .footer_black .message .right_side form textarea{
-     width: -webkit-fill-available;
-     width: -moz-fill-available;
-     height: auto;
-     border-radius: 5px;
-     border: 1px solid #bebebe;
-     padding: 10px;
- }
-.wrapper footer .top_footer .footer_black .message .right_side form textarea:focus::placeholder{
-    color:#6c6c6c;
-    outline: none;
+    @media (min-width: 992px) and (max-width: 1199px) {
+    .wrapper .sponsors {
+        right: -18px;
+    }
+    .wrapper .sponsors .content_sponsor{
+        width: 80%;
+    }
+
+    .wrapper .sponsors .spon_icon{
+        margin-bottom: 50px;
+    }
+
+    .wrapper .sponsors .content_sponsor h1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .wrapper .sponsors .content_sponsor p {
+        font-size: 15px;
+    }
+    .wrapper .sponsors .spon_icon ul li {
+        margin-right: 0;
+    }
+
+    .wrapper .sponsors .spon_icon ul li:nth-of-type(2){
+        display: inline-block;
+        margin:auto;
+        float: none;
+    }
+
+    .wrapper .sponsors button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
 }
-.wrapper footer .top_footer .footer_black .message .right_side form textarea:focus{
-    outline: none;
-    border: 1px solid #90d23d;
+    @media (min-width: 1200px) {
+    .wrapper .sponsors {
+        right: -18px;
+    }
+    .wrapper .sponsors .content_sponsor{
+        width: 80%;
+    }
+
+    .wrapper .sponsors .spon_icon{
+        margin-bottom: 50px;
+    }
+
+    .wrapper .sponsors .content_sponsor h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .wrapper .sponsors .content_sponsor p {
+        font-size: 15px;
+    }
+    .wrapper .sponsors .spon_icon ul li {
+        margin-right: 0;
+    }
+
+    .wrapper .sponsors .spon_icon ul li:nth-of-type(2){
+        display: inline-block;
+        margin:auto;
+        float: none;
+    }
+
+    .wrapper .sponsors button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
 }
-.wrapper footer .top_footer .footer_black .message .right_side form textarea::placeholder{
-    color:#bebebe ;
-    font-family: Roboto-Light;
-    font-size: 14px;
+
+/*
+    ============================================================================================
+                                 end section sponsors responsive
+    ============================================================================================
+*/
+
+
+
+
+
+
+
+/*events started*********************************************************/
+        .wrapper .events {
+            max-width: 100%;
+            height: auto;
+            padding: 100px;
+            background-color: white;
+        }
+
+        .wrapper .events .data {
+            width: 100%;
+            height: auto;
+        }
+
+        .wrapper .events .data h1 {
+            font-family: Roboto-Bold;
+            color: #242424;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .wrapper .events .data p {
+            font-family: Roboto-Light;
+            color: #242424;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .wrapper .events .grid {
+            width: 100%;
+            height: auto;
+        }
+/*
+=========================================================================================================
+                                        section event responsive
+========================================================================================================
+*/
+
+        @media (max-width: 576px) {
+
+            .wrapper .events .data {
+                text-align: center;
+            }
+
+            .wrapper .events .data h1 {
+                font-size: 30px;
+            }
+            .wrapper .events .grid #gridacord-container {
+                display: flex;
+                width: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                overflow: hidden;
+            }
+            .wrapper .events .grid #container .line .item {
+                width: 100%;
+            }
+
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+            .wrapper .events .data {
+                text-align: center;
+            }
+
+            .wrapper .events .data h1 {
+                font-size: 35px;
+            }
+
+            .wrapper .events .grid #container {
+                width: auto;
+                height: auto;
+            }
+
+            .wrapper .events .grid #gridacord-container {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                overflow: hidden;
+            }
+
+            .wrapper .events .grid #container .line .item {
+                width: 45%;
+            }
+        }
+        @media (min-width: 768px) and (max-width:  991px) {
+            .wrapper .events .data {
+                text-align: center;
+            }
+
+            .wrapper .events .data h1 {
+                font-size: 35px;
+            }
+
+            .wrapper .events .grid #container {
+                width: auto;
+                height: auto;
+            }
+
+            .wrapper .events .grid #gridacord-container {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                overflow: hidden;
+            }
+
+            .wrapper .events .grid #container .line .item {
+                width: 45%;
+            }
 }
-.wrapper footer .top_footer .footer_black .message .right_side form input[type="submit"]{
-    width: 100%;
-    padding: 15px 20px;
-    background-color: #373737;
-    color: white;
-    font-size: 22px;
-    font-family: Roboto-Regular;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer;
+        @media (min-width: 992px) and (max-width:  1199px) {
+            .wrapper .events .data {
+                text-align: center;
+            }
+
+            .wrapper .events .data h1 {
+                font-size: 35px;
+            }
+
+            .wrapper .events .grid #container {
+                width: 100%;
+                height: auto;
+            }
+
+            .wrapper .events .grid #gridacord-container {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                overflow: hidden;
+            }
+            .wrapper .events .grid #container .line .item {
+                width: 100%;
+            }
 }
-.wrapper footer .top_footer .footer_black .message .left_side{
-    float: left;
-    height: auto;
-    padding: 50px;
-    border: 1px solid red;
-    width: 40%;
-    overflow: hidden;
-    text-align: center;
+        @media (min-width: 1200px) {
+
+
+            .wrapper .events .data h1 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            .wrapper .events .grid #container {
+                width: 100%;
+            }
+
+            .wrapper .events .grid #gridacord-container {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                overflow: hidden;
+            }
+            .wrapper .events .grid #container .line .item {
+                width: 100%;
+            }
 }
-.wrapper footer .top_footer .footer_black .message .left_side img{
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display:block;
-    margin-bottom: 50px;
+
+
+/*
+        ============================================================================================
+                                       end section event responsive
+        ============================================================================================
+*/
+
+
+
+
+
+
+/*footer started*************************************************************/
+    .wrapper footer {
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .wrapper footer .top_footer {
+        height: auto;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .wrapper footer .top_footer .footer_black {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 604px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+    }
+
+    .wrapper footer .top_footer .footer_black .message {
+        width: 80%;
+        height: auto;
+        margin: 83px auto;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side {
+        float: right;
+        height: auto;
+        padding: 50px;
+        width: 40%;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form input[type="email"] {
+        width: -webkit-fill-available;
+        width: -moz-fill-available;
+        height: auto;
+        border-radius: 5px;
+        border: 1px solid #bebebe;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form input[type="email"]:focus {
+        outline: none;
+        border: 1px solid #90d23d;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form input:focus::placeholder {
+        color: #6c6c6c;
+        outline: none;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form input::placeholder {
+        color: #bebebe;
+        font-family: Roboto-Light;
+        font-size: 14px;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form textarea {
+        width: -webkit-fill-available;
+        width: -moz-fill-available;
+        height: auto;
+        border-radius: 5px;
+        border: 1px solid #bebebe;
+        padding: 10px;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form textarea:focus::placeholder {
+        color: #6c6c6c;
+        outline: none;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form textarea:focus {
+        outline: none;
+        border: 1px solid #90d23d;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form textarea::placeholder {
+        color: #bebebe;
+        font-family: Roboto-Light;
+        font-size: 14px;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form input[type="submit"] {
+        width: 100%;
+        padding: 15px 20px;
+        background-color: #373737;
+        color: white;
+        font-size: 22px;
+        font-family: Roboto-Regular;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .left_side {
+        float: left;
+        height: auto;
+        padding: 50px;
+        width: 40%;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .left_side img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .left_side p {
+        font-family: Roboto-Light;
+        font-size: 18px;
+        color: #454444;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .left_side button {
+        color: white;
+        font-family: Roboto-Regular;
+        font-size: 22px;
+        margin-top: 20px;
+        background-color: #90d23d;
+        border-radius: 15px;
+        padding: 15px 45px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /*bottom_footer started*/
+    .wrapper footer .bottom_footer {
+        max-width: 100%;
+        height: auto;
+        background-color: #90d23d;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .wrapper footer .bottom_footer ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .wrapper footer .bottom_footer ul li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .wrapper footer .bottom_footer ul li a {
+        margin-right: 10px;
+    }
+
+    .wrapper footer .bottom_footer p {
+        color: white;
+        font-family: Roboto-Light;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    /*
+    ============================================================================================
+                                    section footer responsive
+    ============================================================================================
+    */
+    @media (max-width: 576px) {
+
+        .wrapper footer .top_footer .footer_black .message .right_side form input[type="email"] {
+            padding: 10px 20px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side {
+            padding: 20px;
+            width: 40%;
+        }
+
+        .wrapper footer .top_footer .footer_black .message {
+            margin: 120px auto;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side form input[type="submit"] {
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side {
+            padding: 20px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side img {
+            margin-bottom: 15px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side p {
+            font-size: 14px;
+            width: auto;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side button {
+            font-size: 15px;
+            padding: 10px 30px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .wrapper footer .top_footer .footer_black .message .right_side form input[type="email"] {
+            padding: 10px 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .wrapper footer .top_footer .footer_black .message .right_side form textarea{
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side {
+            padding: 20px;
+            width: 40%;
+        }
+
+        .wrapper footer .top_footer .footer_black .message {
+            margin: 120px auto;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side form input[type="submit"] {
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side {
+            padding: 20px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side img {
+            margin-bottom: 15px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side p {
+            font-size: 14px;
+            width: auto;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side button {
+            font-size: 15px;
+            padding: 10px 30px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+    .wrapper footer .top_footer .footer_black .message .right_side form input[type="email"] {
+        padding: 10px 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .wrapper footer .top_footer .footer_black .message .right_side form textarea{
+        box-sizing: border-box;
+        width: 100%;
+        }
+
+    .wrapper footer .top_footer .footer_black .message .right_side {
+        padding: 20px;
+        width: 40%;
+    }
+
+    .wrapper footer .top_footer .footer_black .message {
+        margin: 120px auto;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .right_side form input[type="submit"] {
+        padding: 10px;
+        font-size: 15px;
+    }
+        .wrapper footer .top_footer .footer_black .message .right_side form{
+            text-align: center;
+        }
+
+    .wrapper footer .top_footer .footer_black .message .left_side {
+        padding: 20px;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .left_side img {
+        margin-bottom: 15px;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .left_side p {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .wrapper footer .top_footer .footer_black .message .left_side button {
+        font-size: 15px;
+        padding: 10px 30px;
+    }
 }
-.wrapper footer .top_footer .footer_black .message .left_side p{
-    font-family: Roboto-Light;
-    font-size: 18px;
-    color: #454444;
-    width: 70%;
-    margin: 0 auto;
-}
-.wrapper footer .top_footer .footer_black .message .left_side button{
-    color: white;
-    font-family:Roboto-Regular;
-    font-size: 22px;
-    margin-top: 20px;
-    background-color: #90d23d;
-    border-radius: 15px;
-    padding: 15px 45px;
-    border: none;
-    cursor: pointer;
-}
-/*bottom_footer started*/
-.wrapper footer .bottom_footer{
-    max-width: 100%;
-    height: auto;
-    background-color: #90d23d;
-    text-align: center;
-    padding: 50px 0;
-}
-.wrapper footer .bottom_footer ul{
-    padding: 0;
-    margin: 0;
-}
-.wrapper footer .bottom_footer ul li{
-    list-style: none;
-    display: inline-block;
-}
-.wrapper footer .bottom_footer ul li a{
-    margin-right: 10px;
-}
-.wrapper footer .bottom_footer p{
-    color: white;
-    font-family: Roboto-Light;
-    font-size: 18px;
-    margin-top: 20px;
-}
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+        .wrapper footer .top_footer .footer_black{
+            height: 607px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message{
+            padding: 30px 10px;
+        }
+        .wrapper footer .top_footer .footer_black .message .right_side form{
+            width: 100%;
+        }
+        .wrapper footer .top_footer .footer_black .message .right_side form input[type="email"] {
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side form textarea{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side {
+            padding: 20px;
+            width: 40%;
+        }
+
+        .wrapper footer .top_footer .footer_black .message {
+            margin: 120px auto;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side form input[type="submit"] {
+            padding: 10px;
+            font-size: 15px;
+        }
+        .wrapper footer .top_footer .footer_black .message .right_side form{
+            text-align: center;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side {
+            padding: 20px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side img {
+            margin-bottom: 15px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side p {
+            font-size: 14px;
+            width: auto;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side button {
+            font-size: 15px;
+            padding: 10px 30px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .wrapper footer .top_footer .footer_black{
+            height: 607px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message{
+            padding: 30px 10px;
+        }
+        .wrapper footer .top_footer .footer_black .message .right_side form{
+            width: 100%;
+        }
+        .wrapper footer .top_footer .footer_black .message .right_side form input[type="email"] {
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side form textarea{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side {
+            padding: 20px;
+            width: 40%;
+        }
+
+        .wrapper footer .top_footer .footer_black .message {
+            margin: 120px auto;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .right_side form input[type="submit"] {
+            padding: 10px;
+            font-size: 15px;
+        }
+        .wrapper footer .top_footer .footer_black .message .right_side form{
+            text-align: center;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side {
+            padding: 20px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side img {
+            margin-bottom: 15px;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side p {
+            font-size: 14px;
+            width: auto;
+        }
+
+        .wrapper footer .top_footer .footer_black .message .left_side button {
+            font-size: 15px;
+            padding: 10px 30px;
+        }
+    }
+
+
+/*
+    ============================================================================================
+                                  end section footer responsive
+    ============================================================================================
+*/
 
 

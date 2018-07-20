@@ -1,4 +1,21 @@
 
+// slide menu
+var myMenu = document.getElementById("x");
+var myButton = document.getElementById("slide_menu");
+var myReg = document.getElementById("reg");
+
+function z() {
+    if(myMenu.style.display === "none" ){
+        myMenu.style.display = "block";
+        myReg.style.top = "700px";
+    }else{
+        myMenu.style.display = "none";
+        myReg.style.top = "330px";
+    }
+}
+
+
+
 //date counting started
 
 // Set the date we're counting down to
@@ -105,3 +122,15 @@ _gaq.push(['_trackPageview']);
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+
+
+
+// footer message
+
+var myButt = document.getElementById("view");
+var myMap = document.getElementById("black");
+
+myButt.onclick = function (ev) {
+    myMap.style.display = "none";
+};
+
